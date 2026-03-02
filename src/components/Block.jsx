@@ -39,7 +39,7 @@ const Block = ({ color, size = 60, isRemoving = false, onRemoveComplete }) => {
         width: `${size}px`,
         height: `${size}px`,
         backgroundColor: color,
-        border: isWhite ? '1px solid #eceef2' : 'none',
+        border: isWhite ? '1px solid #E5E7EB' : 'none',
       }}
     />
   );
