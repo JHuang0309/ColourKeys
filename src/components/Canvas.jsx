@@ -52,7 +52,7 @@ const Canvas = () => {
     };
   }, [blocks]);
   
-  // Save canvas as PNG - wrapped in useCallback
+  // Save canvas as PNG
   const handleSave = useCallback(async () => {
     if (!captureRef.current || blocks.length === 0) {
       alert('Create some blocks first!');
@@ -103,14 +103,12 @@ const Canvas = () => {
       alert('Failed to save image. Please try again.');
       setIsSaving(false);
     }
-  }, [blocks.length]); // Only recreate when blocks.length changes
+  }, [blocks.length]);
   
-  // Clear canvas - wrapped in useCallback
+  // Clear canvas
   const handleClear = useCallback(() => {
     if (blocks.length === 0) return;
-    
-    const confirm = window.confirm('Clear all blocks?');
-    if (!confirm) return;
+  
     
     setBlocks([]);
     setHasEnteredOnce(false);
@@ -120,7 +118,7 @@ const Canvas = () => {
     }
   }, [blocks.length, DEBUG]);
   
-  // Handle block removal with animation - wrapped in useCallback
+  // Handle block removal with animation
   const handleRemoveLastBlock = useCallback(() => {
     if (blocks.length === 0) return;
     
@@ -128,7 +126,7 @@ const Canvas = () => {
     setRemovingBlockId(lastBlock.id);
   }, [blocks]);
   
-  // Remove block after animation completes - wrapped in useCallback
+  // Remove block after animation completes
   const onBlockRemoveComplete = useCallback((blockId) => {
     setBlocks(prevBlocks => prevBlocks.filter(block => block.id !== blockId));
     setRemovingBlockId(null);
@@ -138,13 +136,6 @@ const Canvas = () => {
   useEffect(() => {
     const handleKeyDown = (event) => {
       const key = event.key.toLowerCase();
-      
-      // CMD/CTRL + S - Save
-      // if ((event.metaKey || event.ctrlKey) && key === 's') {
-      //   event.preventDefault();
-      //   handleSave();
-      //   return;
-      // }
       
       // LETTER KEYS (A-Z)
       if (key.length === 1 && key >= 'a' && key <= 'z') {
@@ -248,7 +239,7 @@ const Canvas = () => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [currentPalette, hasEnteredOnce, DEBUG, handleSave, handleRemoveLastBlock]); // Added dependencies
+  }, [currentPalette, hasEnteredOnce, DEBUG, handleRemoveLastBlock]); // FIXED: Removed handleSave
 
   const shouldCenter = !hasEnteredOnce && blocks.length > 0;
   const showCursor = blocks.length > 0;
