@@ -24,7 +24,7 @@ const Block = ({ color, size = 60, isRemoving = false, onRemoveComplete }) => {
         if (onRemoveComplete) {
           onRemoveComplete();
         }
-      }, 200); // Match animation duration
+      }, 100); // Match animation duration
       
       return () => clearTimeout(timer);
     }
@@ -32,7 +32,7 @@ const Block = ({ color, size = 60, isRemoving = false, onRemoveComplete }) => {
   
   return (
     <div
-      className={`rounded-xl transition-all duration-200 ease-out ${
+      className={`rounded-xl transition-all duration-100 ease-out ${
         isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-75'
       }`}
       style={{
