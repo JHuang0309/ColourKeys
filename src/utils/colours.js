@@ -40,39 +40,54 @@ export const PALETTES = {
     z: { h: 355, s: 75, l: 65 },    // Light Red
   },
   
-  pastel: {
-    // Soft, light, desaturated colors
-    a: { h: 0, s: 45, l: 75 },      // Pastel Red/Pink
-    b: { h: 15, s: 50, l: 78 },     // Pastel Coral
-    c: { h: 30, s: 55, l: 75 },     // Pastel Orange
-    d: { h: 40, s: 50, l: 73 },     // Pastel Peach
-    e: { h: 50, s: 55, l: 75 },     // Pastel Gold
+  winter: {
+    // Winter rainbow - cold, saturated colors with moody depth
     
-    f: { h: 60, s: 50, l: 78 },     // Pastel Yellow
-    g: { h: 75, s: 45, l: 75 },     // Pastel Lime
-    h: { h: 90, s: 40, l: 73 },     // Pastel Green-Yellow
-    i: { h: 105, s: 42, l: 75 },    // Pastel Mint
-    j: { h: 120, s: 40, l: 70 },    // Pastel Green
+    // Frozen Whites & Ice (A-B)
+    a: { h: 200, s: 20, l: 88 },    // Snow White
+    b: { h: 210, s: 25, l: 85 },    // Ice Blue
     
-    k: { h: 140, s: 38, l: 68 },    // Pastel Sage
-    l: { h: 160, s: 40, l: 70 },    // Pastel Teal
-    m: { h: 175, s: 42, l: 72 },    // Pastel Turquoise
-    n: { h: 185, s: 45, l: 75 },    // Pastel Cyan
+    // Deep Winter Reds (C-E)
+    c: { h: 355, s: 75, l: 45 },    // Winter Berry
+    d: { h: 0, s: 72, l: 42 },      // Deep Crimson
+    e: { h: 5, s: 70, l: 40 },      // Frozen Cherry
     
-    o: { h: 195, s: 48, l: 75 },    // Pastel Sky
-    p: { h: 210, s: 50, l: 78 },    // Pastel Blue
-    q: { h: 225, s: 48, l: 75 },    // Pastel Periwinkle
-    r: { h: 240, s: 50, l: 75 },    // Pastel Royal Blue
+    // Cool Magentas & Pinks (F-G)
+    f: { h: 330, s: 68, l: 48 },    // Cold Magenta
+    g: { h: 340, s: 65, l: 50 },    // Frost Pink
     
-    s: { h: 260, s: 48, l: 75 },    // Pastel Purple
-    t: { h: 280, s: 50, l: 78 },    // Pastel Lavender
-    u: { h: 300, s: 48, l: 75 },    // Pastel Magenta
-    v: { h: 320, s: 50, l: 78 },    // Pastel Pink
+    // Rich Purples & Violets (H-J)
+    h: { h: 280, s: 70, l: 45 },    // Aurora Violet
+    i: { h: 270, s: 68, l: 42 },    // Deep Purple
+    j: { h: 260, s: 65, l: 40 },    // Twilight Iris
     
-    w: { h: 330, s: 52, l: 80 },    // Pastel Rose
-    x: { h: 340, s: 55, l: 82 },    // Pastel Light Pink
-    y: { h: 350, s: 50, l: 80 },    // Pastel Blush
-    z: { h: 355, s: 48, l: 78 },    // Pastel Salmon
+    // Deep Indigos & Blues (K-N)
+    k: { h: 245, s: 72, l: 42 },    // Winter Indigo
+    l: { h: 235, s: 70, l: 40 },    // Deep Navy
+    m: { h: 225, s: 68, l: 38 },    // Midnight Blue
+    n: { h: 215, s: 65, l: 35 },    // Arctic Night
+    
+    // Bright Winter Blues (O-P)
+    o: { h: 205, s: 75, l: 48 },    // Ice Blue
+    p: { h: 195, s: 72, l: 50 },    // Glacial Blue
+    
+    // Cool Cyans & Teals (Q-R)
+    q: { h: 185, s: 70, l: 45 },    // Winter Cyan
+    r: { h: 175, s: 68, l: 42 },    // Frozen Teal
+    
+    // Deep Greens (S-T)
+    s: { h: 160, s: 60, l: 38 },    // Aurora Green
+    t: { h: 150, s: 58, l: 35 },    // Deep Evergreen
+    
+    // Cold Slate Grays (U-W)
+    u: { h: 210, s: 25, l: 45 },    // Slate Blue
+    v: { h: 200, s: 20, l: 42 },    // Storm Gray
+    w: { h: 220, s: 18, l: 40 },    // Cold Charcoal
+    
+    // Deep Shadows (X-Z)
+    x: { h: 210, s: 22, l: 35 },    // Winter Shadow
+    y: { h: 200, s: 18, l: 30 },    // Frozen Stone
+    z: { h: 215, s: 15, l: 25 },    // Deep Slate
   },
   
   summer: {
@@ -111,38 +126,46 @@ export const PALETTES = {
   },
   
   autumn: {
-    // Orange, brown, rust, earthy fall tones
-    a: { h: 0, s: 60, l: 45 },      // Deep Red
-    b: { h: 10, s: 65, l: 48 },     // Brick Red
-    c: { h: 18, s: 70, l: 50 },     // Rust
-    d: { h: 25, s: 68, l: 48 },     // Clay
-    e: { h: 32, s: 72, l: 50 },     // Burnt Orange
+    // Japanese autumn with cherry blossoms, maple leaves, and warm sunset tones
+    // Soft Cherry Blossoms (A-C)
+    a: { h: 350, s: 50, l: 72 },    // Sakura Pink
+    b: { h: 345, s: 55, l: 68 },    // Deep Sakura
+    c: { h: 340, s: 45, l: 75 },    // Light Blossom
     
-    f: { h: 38, s: 70, l: 48 },     // Pumpkin
-    g: { h: 42, s: 65, l: 45 },     // Amber
-    h: { h: 45, s: 60, l: 42 },     // Bronze
-    i: { h: 48, s: 55, l: 40 },     // Ochre
-    j: { h: 52, s: 50, l: 38 },     // Mustard
+    // Autumn Reds & Maples (D-H)
+    d: { h: 0, s: 68, l: 58 },      // Momiji Red (maple leaf)
+    e: { h: 5, s: 72, l: 55 },      // Scarlet Maple
+    f: { h: 10, s: 70, l: 52 },     // Crimson Leaf
+    g: { h: 15, s: 68, l: 50 },     // Beni (traditional red)
+    h: { h: 20, s: 65, l: 48 },     // Deep Vermillion
     
-    k: { h: 80, s: 35, l: 42 },     // Olive
-    l: { h: 90, s: 30, l: 40 },     // Moss
-    m: { h: 100, s: 28, l: 38 },    // Forest
-    n: { h: 110, s: 25, l: 35 },    // Pine
+    // Warm Oranges & Persimmons (I-M)
+    i: { h: 25, s: 75, l: 55 },     // Kaki (persimmon)
+    j: { h: 30, s: 72, l: 58 },     // Tangerine
+    k: { h: 35, s: 70, l: 60 },     // Amber
+    l: { h: 40, s: 65, l: 58 },     // Golden Orange
+    m: { h: 45, s: 60, l: 56 },     // Sunset Orange
     
-    o: { h: 25, s: 45, l: 35 },     // Brown
-    p: { h: 28, s: 48, l: 38 },     // Chestnut
-    q: { h: 30, s: 42, l: 40 },     // Walnut
-    r: { h: 32, s: 40, l: 42 },     // Hazel
+    // Warm Earth & Clay (N-P)
+    n: { h: 28, s: 48, l: 52 },     // Tsuchi (earth)
+    o: { h: 32, s: 45, l: 50 },     // Terracotta
+    p: { h: 38, s: 42, l: 48 },     // Clay Pot
     
-    s: { h: 15, s: 50, l: 35 },     // Mahogany
-    t: { h: 20, s: 48, l: 38 },     // Auburn
-    u: { h: 35, s: 45, l: 40 },     // Terracotta
-    v: { h: 40, s: 42, l: 42 },     // Copper
+    // Nature Greens (Q-S)
+    q: { h: 85, s: 32, l: 52 },     // Moegi (sprout green)
+    r: { h: 120, s: 28, l: 48 },    // Matcha (tea green)
+    s: { h: 140, s: 25, l: 45 },    // Tokiwa (evergreen)
     
-    w: { h: 45, s: 38, l: 45 },     // Sand
-    x: { h: 50, s: 35, l: 48 },     // Wheat
-    y: { h: 55, s: 32, l: 50 },     // Straw
-    z: { h: 60, s: 30, l: 52 },     // Hay
+    // Muted Blues & Purples (T-V)
+    t: { h: 200, s: 30, l: 60 },    // Mizuiro (water blue)
+    u: { h: 280, s: 35, l: 52 },    // Sumire (violet)
+    v: { h: 290, s: 38, l: 55 },    // Fuji (wisteria)
+    
+    // Ink & Warm Neutrals (W-Z)
+    w: { h: 0, s: 8, l: 38 },       // Sumi (ink)
+    x: { h: 30, s: 12, l: 48 },     // Warm gray
+    y: { h: 40, s: 28, l: 65 },     // Kaba (birch)
+    z: { h: 35, s: 35, l: 68 },     // Torinoko (eggshell)
   }
 };
 
@@ -152,7 +175,7 @@ export const PALETTE_INFO = {
     name: 'Spring',
     description: 'Vibrant, saturated colors'
   },
-  pastel: {
+  winter: {
     name: 'Winter',
     description: 'Soft, light, gentle colors'
   },
@@ -167,7 +190,7 @@ export const PALETTE_INFO = {
 };
 
 // Get array of palette keys in order
-export const PALETTE_ORDER = ['normal', 'pastel', 'summer', 'autumn'];
+export const PALETTE_ORDER = ['normal', 'winter', 'summer', 'autumn'];
 
 // Modifier adjustment values
 const MODIFIERS = {
