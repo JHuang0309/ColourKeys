@@ -2,7 +2,7 @@
 
 A creative typing tool where each keyboard letter generates a colored block, allowing you to create visual art through typing.
 
-🎨 **[Try it live!]([https://colourkeys.vercel.app](https://colour-keys.vercel.app/))**
+🎨 **[Try it live!](https://colourkeys.vercel.app)**
 
 ## Features
 
