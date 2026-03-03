@@ -1,7 +1,6 @@
 {
   "framework": "vite",
-  "buildCommand": "pnpm run build",
+  "buildCommand": "yarn build",
   "outputDirectory": "dist",
-  "installCommand": "pnpm install --no-frozen-lockfile",
-  "devCommand": "pnpm run dev"
+  "installCommand": "yarn install"
 }
