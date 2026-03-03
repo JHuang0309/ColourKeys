@@ -140,10 +140,19 @@ const Canvas = () => {
   }, [blocks.length, DEBUG]);
   
   // Handle block removal with animation
+  // Handle block removal with animation
   const handleRemoveLastBlock = useCallback(() => {
     if (blocks.length === 0) return;
     
     const lastBlock = blocks[blocks.length - 1];
+    
+    // If last block is a linebreak, remove it immediately (no animation)
+    if (lastBlock.type === 'linebreak') {
+      setBlocks(prevBlocks => prevBlocks.slice(0, -1));
+      return;
+    }
+    
+    // Otherwise, trigger animation
     setRemovingBlockId(lastBlock.id);
   }, [blocks]);
   

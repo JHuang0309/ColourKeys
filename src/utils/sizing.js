@@ -1,9 +1,9 @@
 // Block sizing configuration
 const SIZING_CONFIG = {
   baseSize: 80,
-  minSize: 24,
+  minSize: 30,
   maxSize: 80,
-  shrinkRate: 3,
+  shrinkRate: 2,
   gapSize: 8,
 };
 
